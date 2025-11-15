@@ -9,6 +9,13 @@ One function per operation, in order.
 #Partner 2: Angel Moreno
 
 import math
+def square_root(a):
+    try:
+        return math.sqrt(a)f
+    except ValueError:
+        raise ValueError("Cannot take square root of a negative number")
+def hypotenuse(a, b):
+        return math.hypot(a, b)
 def add(a, b):
     return a + b
 
