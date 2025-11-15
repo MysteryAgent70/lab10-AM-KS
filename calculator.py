@@ -4,6 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
+<<<<<<< HEAD
 #Partner 1: Keshanta Smith
 #Partner 2: Angel Moreno
 
@@ -31,5 +32,37 @@ def log(a, b):
     return math.log(b, a)
 def exp(a, b):
     return a ** b
+=======
+# First example
+import math
 
+def add(a, b): 
+    return a + b
+>>>>>>> 18e873bca20e072f879c5cf07ef0e9240577faba
 
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    try:
+        if a == 0:
+            raise ZeroDivisionError("ZeroDivisionError")
+        else:
+            return b / a
+    except ZeroDivisionError as error:
+        return str(error)
+
+def log(a, b):
+    try:
+        if a == 1 or a <= 0 or b <= 0:
+            raise ValueError("ValueError")
+        else:
+            return math.log(b, a)
+    except ValueError as error:
+        return str(error)
+
+def exp(a, b):
+    return math.pow(a, b)
