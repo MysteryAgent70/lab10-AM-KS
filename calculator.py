@@ -1,11 +1,6 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
+#https://github.com/MysteryAgent70/lab10-AM-KS
 #Partner 1: Keshanta Smith
-#Partner 2: Angel Mo
+#Partner 2: Angel Moreno
 
 import math
 def square_root(a):
@@ -24,11 +19,6 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
-    return b / a
-
 def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("Invalid arguments for logarithm")
@@ -36,5 +26,3 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
-=======
-# First example
