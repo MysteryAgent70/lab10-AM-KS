@@ -22,7 +22,7 @@ def multiply(a, b):
 def divide(a, b):
     if a == 0:
         raise ZeroDivisionError("Cannot divide by zero")
-    return b / a
+    return a / b
 
 def logarithm(a, b):
     if a <= 0 or b <= 0:
