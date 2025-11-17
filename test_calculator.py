@@ -1,3 +1,7 @@
+#https://github.com/MysteryAgent70/lab10-AM-KS
+#Partner 1: Keshanta Smith
+#Partner 2: Angel Moreno
+
 import unittest
 from calculator import *
 
@@ -19,9 +23,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(0, 10), 0)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(10, 2), 5)
-        self.assertAlmostEqual(div(7, 2), 3.5)
-        self.assertEqual(div(-9, 3), -3)
+        self.assertEqual(div(10, 2), 0.2)
+        self.assertAlmostEqual(div(7, 2), 0.2857143)
+        self.assertEqual(div(3, -9), -3)
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
