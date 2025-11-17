@@ -41,9 +41,9 @@ class TestCalculator(unittest.TestCase):
               logarithm(-1, 10)
 
     def test_hypotenuse(self):
-        self.assertAlmostEqual(hypothenuse(3, 4), 5)
-        self.assertAlmostEqual(hypothenuse(5, 12), 13)
-        self.assertAlmostEqual(hypothenuse(8, 15), 17)
+        self.assertAlmostEqual(hypotenuse(3, 4), 5)
+        self.assertAlmostEqual(hypotenuse(5, 12), 13)
+        self.assertAlmostEqual(hypotenuse(8, 15), 17)
 
     def test_sqrt(self):
         self.assertAlmostEqual(square_root(9), 3)
